@@ -1,9 +1,9 @@
 cask "voltius" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.27.0"
-  sha256 arm:   "9f8f0f7b6651475f63657ce99a9ffb59488d8280434543ec65445c7987957b2a",
-         intel: "92d38dbd20cf1407cb7e2b937417e8a8048bb29f58db7b0f60f36969ecaa45e7"
+  version "0.28.0"
+  sha256 arm:   "71dc7289c9410a7ab7c911434b447bf1fa862d82531b492fe946887376e57e76",
+         intel: "a205acd34319ef9b98a21933670d11688dbbee219fb89b61a6bdac44646113e4"
 
   url "https://github.com/VoltiusApp/voltius/releases/download/v#{version}/Voltius_#{version}_#{arch}.dmg",
       verified: "github.com/VoltiusApp/voltius/"
@@ -22,8 +22,8 @@ cask "voltius" do
   app "Voltius.app"
 
   caveats <<~CAVEATS
-    Voltius is not yet signed or notarized, so on first launch macOS Gatekeeper
-    will warn that the app cannot be checked for malware.
+    Voltius is ad-hoc signed but not notarized, so on first launch macOS
+    Gatekeeper will warn that the app cannot be checked for malware.
 
     Right-click (or Control-click) Voltius in Applications and choose Open, then
     confirm. You only need to do this once.
