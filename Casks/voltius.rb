@@ -28,8 +28,8 @@ cask "voltius" do
     Right-click (or Control-click) Voltius in Applications and choose Open, then
     confirm. You only need to do this once.
 
-    To skip the warning entirely, install with:
-      brew install --cask --no-quarantine voltiusapp/voltius/voltius
+    To clear the quarantine flag from an existing installation instead, run:
+      xattr -dr com.apple.quarantine /Applications/Voltius.app
 
     Voltius updates itself in-app after installation.
   CAVEATS
