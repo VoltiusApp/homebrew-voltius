@@ -1,12 +1,11 @@
 cask "voltius" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.33.3"
-  sha256 arm:   "d31cd89a382ce54e91eefdd29e2162ea6af7a8afe2a572c09a5176999b4781f4",
-         intel: "fce9370ff54444739a2df3cdd2900241d439fffdb8286530920a24ea22f97559"
+  version "0.34.0"
+  sha256 arm:   "6790827c1fbe288e8028a69198dc038e4629dcd67389b9383d3355acf4e4712b",
+         intel: "bc7d5c72bc27d80acb4682035d166c61298c1c3fb3badf083f8e71a597552bdd"
 
-  url "https://github.com/VoltiusApp/voltius/releases/download/v#{version}/Voltius_#{version}_#{arch}.dmg",
-      verified: "github.com/VoltiusApp/voltius/"
+  url "https://github.com/VoltiusApp/voltius/releases/download/v#{version}/Voltius_#{version}_#{arch}.dmg"
   name "Voltius"
   desc "Cross-platform SSH client and terminal"
   homepage "https://voltius.app/"
