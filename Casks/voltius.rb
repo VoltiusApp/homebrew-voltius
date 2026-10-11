@@ -1,9 +1,9 @@
 cask "voltius" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.53.0"
-  sha256 arm:   "6bf56e4929c219f6dd897f935e0c39ea33c7dfaaf1a3d03de0e07336953ab6b9",
-         intel: "f84a55019f6c6e89ce3c6d79fe42376e1c4afebdbc77bbacbc51dadde1423dc9"
+  version "0.53.1"
+  sha256 arm:   "bbd25944871e6add09d1aef2c4a7c92677455e3318b7737a0e92963bb8e8c228",
+         intel: "36573bf71735f2847857181c6e48e2b7478e628a4c16e2407fd84369701523ed"
 
   url "https://github.com/VoltiusApp/voltius/releases/download/v#{version}/Voltius_#{version}_#{arch}.dmg"
   name "Voltius"
